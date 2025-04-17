@@ -11,18 +11,18 @@ const Index = () => {
     {
       id: 1,
       title: "Cuisines Modernes",
-      image: "/public/IMG_1185.jpeg",
+      image: "/cuisine.jpg",
     },
     {
       id: 2,
       title: "Portes & Fenêtres",
-      image: "/public/portes.jpg",
+      image: "/portes.jpg",
     
     },
     {
       id: 3,
       title: "Solutions Aluminium",
-      image: "/public/solutions.jpg",
+      image: "/solutions.jpg",
     }
   ];
 
