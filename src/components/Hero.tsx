@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const backgroundImages = [
+  "/IMG_1185.jpeg",
   "/cuisine.jpg",
-  "/portes.jpg",
-  "/solutions.jpg"
+  "/portes.jpg"
 ];
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-80 overflow-hidden">
       {/* Slider d'images de fond */}
       <div className="absolute inset-0 z-0">
         <img 

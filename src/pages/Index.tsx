@@ -11,7 +11,7 @@ const Index = () => {
     {
       id: 1,
       title: "Cuisines Modernes",
-      image: "/public/cuisine.jpg",
+      image: "/public/IMG_1185.jpeg",
     },
     {
       id: 2,
