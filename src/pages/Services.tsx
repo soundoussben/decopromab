@@ -19,7 +19,7 @@ const Services = () => {
     },
     {
       id: 2,
-      title: "Portes & Fenêtres",
+      title: "Portes",
       description: "Notre gamme de portes et fenêtres combine sécurité, isolation et design. Que vous recherchiez un style classique ou contemporain, nous avons des solutions adaptées à tous les goûts et tous les budgets.",
       image: "/portes.jpg",
       features: [
@@ -31,7 +31,7 @@ const Services = () => {
     },
     {
       id: 3,
-      title: "Solutions Aluminium",
+      title: "Fenêtres",
       description: "Spécialistes de l'aluminium, nous offrons des produits durables et modernes pour vos projets d'aménagement. L'aluminium combine légèreté, résistance et facilité d'entretien, en faisant un matériau idéal pour de nombreuses applications.",
       image: "/solutions.jpg",
       features: [

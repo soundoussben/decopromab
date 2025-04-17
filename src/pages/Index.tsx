@@ -15,13 +15,13 @@ const Index = () => {
     },
     {
       id: 2,
-      title: "Portes & Fenêtres",
+      title: "Portes ",
       image: "/portes.jpg",
     
     },
     {
       id: 3,
-      title: "Solutions Aluminium",
+      title: "Fenêtres",
       image: "/solutions.jpg",
     }
   ];
