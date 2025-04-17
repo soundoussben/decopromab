@@ -9,7 +9,7 @@ const Services = () => {
       id: 1,
       title: "Cuisines Modernes",
       description: "Nous proposons des solutions de cuisine complètes, alliant esthétique et fonctionnalité. Nos cuisines sont conçues pour optimiser l'espace tout en offrant un design élégant qui s'adapte à votre intérieur.",
-      image: "/public/cuisine.jpg",
+      image: "/cuisine.jpg",
       features: [
         "Design personnalisé selon vos besoins",
         "Matériaux de haute qualité",
@@ -21,7 +21,7 @@ const Services = () => {
       id: 2,
       title: "Portes & Fenêtres",
       description: "Notre gamme de portes et fenêtres combine sécurité, isolation et design. Que vous recherchiez un style classique ou contemporain, nous avons des solutions adaptées à tous les goûts et tous les budgets.",
-      image: "/public/portes.jpg",
+      image: "/portes.jpg",
       features: [
         "Large choix de matériaux et finitions",
         "Isolation thermique et acoustique",
@@ -33,7 +33,7 @@ const Services = () => {
       id: 3,
       title: "Solutions Aluminium",
       description: "Spécialistes de l'aluminium, nous offrons des produits durables et modernes pour vos projets d'aménagement. L'aluminium combine légèreté, résistance et facilité d'entretien, en faisant un matériau idéal pour de nombreuses applications.",
-      image: "/public/solutions.jpg",
+      image: "/solutions.jpg",
       features: [
         "Profilés aluminium sur mesure",
         "Résistance aux intempéries",
@@ -45,7 +45,7 @@ const Services = () => {
       id: 4,
       title: "Conseils & Conception",
       description: "Notre équipe d'experts vous accompagne tout au long de votre projet, de la conception à la réalisation. Nous vous aidons à définir vos besoins et à trouver les solutions les plus adaptées à votre espace et votre budget.",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/IMG_1185.jpeg",
       features: [
         "Consultation personnalisée",
         "Visualisation 3D de votre projet",

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // Types pour notre galerie
-type GalleryCategory = "all" | "cuisines" | "portes" | "aluminium";
+type GalleryCategory = "all" | "cuisines" | "portes" | "fenetres";
 type GalleryItem = {
   id: number;
   title: string;
@@ -22,55 +22,67 @@ const Portfolio = () => {
       id: 1,
       title: "Cuisine Moderne Épurée",
       category: "cuisines",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/1.jpg"
     },
     {
       id: 2,
       title: "Cuisine Design Intégrée",
       category: "cuisines",
-      image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/2.png"
     },
     {
       id: 3,
-      title: "Porte d'Entrée Élégante",
-      category: "portes",
-      image: "https://images.unsplash.com/photo-1558799401-8e0eac8a3f8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Cuisine Luxe",
+      category: "cuisines",
+      image: "/3.png"
     },
     {
       id: 4,
-      title: "Portes-Fenêtres Lumineuses",
-      category: "portes",
-      image: "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Cuisine Luxe",
+      category: "cuisines",
+      image: "/4.png"
     },
     {
       id: 5,
-      title: "Structure Aluminium Moderne",
-      category: "aluminium",
-      image: "https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Cuisine Intégrée Design",
+      category: "cuisines",
+      image: "/5.png"
     },
-    {
+     {
       id: 6,
-      title: "Façade Aluminium Contemporaine",
-      category: "aluminium",
-      image: "https://images.unsplash.com/photo-1577493340887-b7bfff550145?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Porte d'Entrée Élégante",
+      category: "portes",
+      image: "/p1.jpg"
     },
     {
       id: 7,
-      title: "Cuisine Intégrée Design",
-      category: "cuisines",
-      image: "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Portes-Fenêtres Lumineuses",
+      category: "portes",
+      image: "/p2.jpg"
     },
     {
       id: 8,
       title: "Porte Coulissante Moderne",
       category: "portes",
-      image: "https://images.unsplash.com/photo-1534889196564-a6799df68403?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/p3.jpg"
     },
     {
       id: 9,
+      title: "Structure Aluminium Moderne",
+      category: "fenetres",
+      image: "/f2.jpg"
+    },
+    {
+      id: 10,
+      title: "Façade Aluminium Contemporaine",
+      category: "fenetres",
+      image: "/f1.jpg"
+    },
+    {
+      id: 11,
       title: "Profilés Aluminium Design",
-      category: "aluminium",
-      image: "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      category: "fenetres",
+      image: "/f3.jpg"
     }
   ];
 
@@ -83,8 +95,8 @@ const Portfolio = () => {
   const filterOptions: { value: GalleryCategory; label: string }[] = [
     { value: "all", label: "Tous" },
     { value: "cuisines", label: "Cuisines" },
-    { value: "portes", label: "Portes & Fenêtres" },
-    { value: "aluminium", label: "Aluminium" }
+    { value: "portes", label: "Portes " },
+    { value: "fenetres", label: "Fenêtres" }
   ];
 
   // État pour la modal de galerie
