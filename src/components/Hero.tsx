@@ -1,20 +1,37 @@
-
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+const backgroundImages = [
+  "/cuisine.jpg",
+  "/portes.jpg",
+  "/solutions.jpg"
+];
+
 const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 4000); // toutes les 4 secondes
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative py-20 overflow-hidden">
-      {/* Background with overlay */}
-      <div className="absolute inset-0 bg-decopromab-black/80 z-0">
+    <section className="relative py-32 overflow-hidden">
+      {/* Slider d'images de fond */}
+      <div className="absolute inset-0 z-0">
         <img 
-          src="/hero-background.jpg" 
-          alt="Decopromab Showroom" 
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          src={backgroundImages[currentIndex]} 
+          alt="Décoration intérieure" 
+          className="w-full h-full object-cover opacity-100 transition-opacity duration-1000"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-decopromab-black to-decopromab-black/50"></div>
+        <div className="absolute inset-0 bg-decopromab-black/70"></div>
       </div>
 
+      {/* Contenu par-dessus */}
       <div className="container relative z-10 mx-auto px-4 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center max-w-4xl mb-6">
           Bienvenue chez <span className="text-decopromab-red">Showroom Decopromab</span>
@@ -25,10 +42,10 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button asChild className="bg-decopromab-red hover:bg-decopromab-red/90 text-white">
+          <Button asChild className="bg-decopromab-red hover:bg-decopromab-red/90 text-white hover:bg-white/5">
             <Link to="/portfolio">Découvrir Nos Réalisations</Link>
           </Button>
-          <Button asChild variant="outline" className="text-white border-white hover:bg-white/10">
+          <Button asChild variant="outline" className="text-black border-white hover:bg-white/10">
             <Link to="/contact">Nous Contacter</Link>
           </Button>
         </div>

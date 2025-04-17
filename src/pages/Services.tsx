@@ -9,7 +9,7 @@ const Services = () => {
       id: 1,
       title: "Cuisines Modernes",
       description: "Nous proposons des solutions de cuisine complètes, alliant esthétique et fonctionnalité. Nos cuisines sont conçues pour optimiser l'espace tout en offrant un design élégant qui s'adapte à votre intérieur.",
-      image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/public/cuisine.jpg",
       features: [
         "Design personnalisé selon vos besoins",
         "Matériaux de haute qualité",
@@ -21,7 +21,7 @@ const Services = () => {
       id: 2,
       title: "Portes & Fenêtres",
       description: "Notre gamme de portes et fenêtres combine sécurité, isolation et design. Que vous recherchiez un style classique ou contemporain, nous avons des solutions adaptées à tous les goûts et tous les budgets.",
-      image: "https://images.unsplash.com/photo-1558799401-8e0eac8a3f8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/public/portes.jpg",
       features: [
         "Large choix de matériaux et finitions",
         "Isolation thermique et acoustique",
@@ -33,7 +33,7 @@ const Services = () => {
       id: 3,
       title: "Solutions Aluminium",
       description: "Spécialistes de l'aluminium, nous offrons des produits durables et modernes pour vos projets d'aménagement. L'aluminium combine légèreté, résistance et facilité d'entretien, en faisant un matériau idéal pour de nombreuses applications.",
-      image: "https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/public/solutions.jpg",
       features: [
         "Profilés aluminium sur mesure",
         "Résistance aux intempéries",
@@ -124,7 +124,7 @@ const Services = () => {
             </p>
             <a
               href="/contact"
-              className="inline-block px-8 py-4 bg-decopromab-red text-white font-bold rounded-md hover:bg-decopromab-red/90 transition-colors"
+              className="inline-block px-8 py-4 bg-decopromab-red !text-white font-bold rounded-md hover:bg-decopromab-red/90 transition-colors"
             >
               Nous Contacter
             </a>

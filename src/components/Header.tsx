@@ -10,39 +10,39 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center space-x-2">
+    <header className="w-full bg-white shadow-md  ">
+      <div className="container mx-auto px-8 py-8 flex justify-between items-center  ">
+        <Link to="/" className="flex items-center space-x-2 ">
           <img 
-            src="/lovable-uploads/cb7445de-2386-42bc-bd0a-20c34c68ea17.png" 
+            src="/lovable-uploads/cb7445de-2386-42bc-bd0a-20c34c68ea17-removebg-preview.png" 
             alt="Decopromab Logo" 
             className="h-24" 
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-40">
           <Link
             to="/"
-            className="text-decopromab-black hover:text-decopromab-red font-medium transition-colors"
+           className="text-decopromab-black hover:text-decopromab-red font-bold text-[18px] transition-colors"
           >
             Accueil
           </Link>
           <Link
             to="/services"
-            className="text-decopromab-black hover:text-decopromab-red font-medium transition-colors"
+      className="text-decopromab-black hover:text-decopromab-red font-bold text-[18px] transition-colors"
           >
             Services
           </Link>
           <Link
             to="/portfolio"
-            className="text-decopromab-black hover:text-decopromab-red font-medium transition-colors"
+           className="text-decopromab-black hover:text-decopromab-red font-bold text-[18px] transition-colors"
           >
             Portfolio
           </Link>
           <Link
             to="/contact"
-            className="text-decopromab-black hover:text-decopromab-red font-medium transition-colors"
+           className="text-decopromab-black hover:text-decopromab-red font-bold text-[18px] transition-colors"
           >
             Contact
           </Link>

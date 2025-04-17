@@ -11,17 +11,18 @@ const Index = () => {
     {
       id: 1,
       title: "Cuisines Modernes",
-      image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/public/cuisine.jpg",
     },
     {
       id: 2,
       title: "Portes & Fenêtres",
-      image: "https://images.unsplash.com/photo-1558799401-8e0eac8a3f8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/public/portes.jpg",
+    
     },
     {
       id: 3,
       title: "Solutions Aluminium",
-      image: "https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/public/solutions.jpg",
     }
   ];
 
@@ -33,32 +34,38 @@ const Index = () => {
         <Hero />
         
         {/* About Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6 text-decopromab-black">
-                Notre <span className="text-decopromab-red">Showroom</span>
-              </h2>
-              <div className="space-y-4 text-decopromab-black/80">
-                <p>
-                  Bienvenue chez Showroom Decopromab, votre destination incontournable pour découvrir des solutions innovantes et de qualité dans le domaine de la décoration intérieure. Depuis notre création, nous nous engageons à offrir à nos clients une expérience unique en matière de design et d'aménagement, en alliant esthétique, confort et fonctionnalité.
-                </p>
-                <p>
-                  Nous proposons une large gamme de produits soigneusement sélectionnés pour répondre aux besoins de chacun, qu'il s'agisse de particuliers à la recherche de nouveautés tendance ou de professionnels du secteur souhaitant offrir des espaces raffinés et modernes. Grâce à notre équipe d'experts passionnés, nous offrons un service personnalisé, en vous guidant dans le choix de vos matériaux et en vous apportant des conseils adaptés à vos projets.
-                </p>
-                <p>
-                  Chez Showroom Decopromab, nous croyons que chaque espace mérite une attention particulière et nous nous efforçons de vous offrir des produits à la hauteur de vos attentes. Découvrez nos collections et laissez-vous inspirer par nos solutions créatives pour transformer votre intérieur.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section className="py-20 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-4xl font-extrabold text-decopromab-black mb-4">
+        Notre <span className="text-decopromab-red">Showroom</span>
+      </h2>
+      <div className="w-24 h-1 bg-decopromab-red mx-auto mb-10 rounded-full"></div>
+
+      <div className="prose prose-lg text-decopromab-black/80 max-w-none text-justify space-y-6">
+        <p>
+          Bienvenue chez <strong>Showroom Decopromab</strong>, votre destination incontournable pour découvrir des solutions innovantes et de qualité dans le domaine de la décoration intérieure. Depuis notre création, nous nous engageons à offrir à nos clients une expérience unique en matière de design et d'aménagement, en alliant esthétique, confort et fonctionnalité.
+        </p>
+        <p>
+          Nous proposons une large gamme de produits soigneusement sélectionnés pour répondre aux besoins de chacun, qu'il s'agisse de particuliers à la recherche de nouveautés tendance ou de professionnels du secteur souhaitant offrir des espaces raffinés et modernes. 
+        </p>
+        <p>
+          Grâce à notre équipe d’experts passionnés, nous offrons un <span className="text-decopromab-red font-medium">service personnalisé</span>, en vous guidant dans le choix de vos matériaux et en vous apportant des conseils adaptés à vos projets.
+        </p>
+        <p>
+          Chez <strong>Showroom Decopromab</strong>, nous croyons que chaque espace mérite une attention particulière. Laissez-vous inspirer par nos collections et nos <span className="italic">solutions créatives</span> pour transformer votre intérieur.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
         
         {/* Services Preview */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-decopromab-black">
+            <h2 className="text-4xl font-extrabold text-decopromab-black mb-4">
                 Nos <span className="text-decopromab-red">Services</span>
               </h2>
               <p className="mt-4 text-decopromab-black/70 max-w-2xl mx-auto">
@@ -101,20 +108,23 @@ const Index = () => {
         </section>
         
         {/* Call to Action */}
-        <section className="py-20 bg-decopromab-black">
+        <section className="py-20 bg-gradient-to-r from-decopromab-black via-decopromab-red/80 to-decopromab-black/80">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
-              Transformez votre intérieur avec <span className="text-decopromab-red">Decopromab</span>
+              Transformez votre intérieur avec <span className="text-decopromab-black">Decopromab</span>
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-8">
               Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à créer l'espace de vos rêves.
             </p>
             <Link
               to="/contact"
-              className="inline-block px-8 py-4 bg-decopromab-red text-white font-bold rounded-md hover:bg-decopromab-red/90 transition-colors"
-            >
+             // className="inline-block px-8 py-4 bg-decopromab-red text-white font-bold rounded-md hover:bg-decopromab-red/90 transition-colors"
+          // className="inline-block px-8 py-4 bg-decopromab-red !text-white font-bold rounded-xl shadow-md border border-transparent hover:bg-decopromab-red/90 hover:shadow-lg transition-all duration-300"
+          className="inline-block px-8 py-4 bg-decopromab-red !text-white font-bold rounded-md hover:bg-decopromab-red/90 transition-colors"
+          >
               Nous Contacter
             </Link>
+            
           </div>
         </section>
       </main>
